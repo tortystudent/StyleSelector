@@ -1,0 +1,19 @@
+
+body {
+  background:$color5;
+ }
+
+h1{
+  color: $color1;
+}
+
+h2{
+  color: $color2;
+}
+
+.grid {
+    color: $color3;
+  >*{
+  background-color: $color4;
+  }
+}

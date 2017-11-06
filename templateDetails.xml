@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>cfc</name>
+	<version>1.0</version>
+	<creationDate>4/30/2012</creationDate>
+	<author>Kyle Ledbetter</author>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description>TPL_CFC_XML_DESCRIPTION</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+	</files>
+	<positions>
+		<position>mobile-sidebar-left</position>
+		<position>left-off-page</position>
+		<position>float-top</position>
+		<position>navigation</position>
+		<position>header-right</position>
+		<position>hero</position>
+		<position>hero-full-width</position>
+		<position>above-content</position>
+		<position>below-component</position>
+		<position>below-content</position>
+		<position>below-content-2</position>
+		<position>below-content-3</position>
+		<position>right-sidebar</position>
+		<position>footer-left</position>
+		<position>footer-right</position>
+		<position>footer</position>
+		<position>bottom</position>
+		<position>debug</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_cfc.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_cfc.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">	
+				<field name="class-suffix" class="" type="text" default=""
+					label="Class Suffix"
+					description="This class gets added to the body element" />
+							
+				<field name="pageBackgroundColor" class="" type="color" default="#08C"
+				label="Page Background Color"
+				description="Background color for the page" />
+				
+				<field name="containerBackgroundColor" class="" type="color" default="#08C"
+					label="Container Background Color"
+					description="The background color of the main container" />
+				
+				<field name="headerColor" class="" type="color" default="#08C"
+					label="Header Color"
+					description="Color for the header element" />
+					
+				<field name="navigationBackgroundColor" class="" type="color" default="#08C"
+					label="Navigation Background Color"
+					description="Background color of the nav bar" />
+					
+				<field name="navigationTextColor" class="" type="color" default="#08C"
+					label="Navigation Text Color"
+					description="Color of the text in the nav bar" />
+					
+				<field name="navigationTextActiveColor" class="" type="color" default="#08C"
+					label="Navigation active text color"
+					description="The color for the active text in the nav bar" />
+					
+				<field name="footerBackgroundColor" class="" type="color" default="#333"
+					label="Footer Background Color"
+					description="Background color for the footer" />
+					
+				<field name="footerTextColor" class="" type="color" default="#fff"
+					label="Footer Text Color"
+					description="Color for the text in the footer" />
+					
+				<field name="bodyTextColor" class="" type="color" default="#08C"
+					label="Body Text Color"
+					description="The color of the main body text" />
+					
+				<field name="bodyLinkColor" class="" type="color" default="#08C"
+					label="Body Link Color"
+					description="The color of links in the main body" />
+					
+				<field name="headingFont" class="" type="text" default="Open+Sans"
+					label="Heading font"
+					description="Google font used for headings" />
+					
+				<field name="h2TextSize" class="" type="number" default="24"
+					label="h2 Font Size"
+					description="The font size of h2 tags" />
+					
+				<field name="h2TextColor" class="" type="color" default="#333"
+					label="h2 Text Color"
+					description="The text color of h2 tags" />
+					
+				<field name="h2FontWeight" class="btn-group btn-group-yesno" type="radio" default="2"
+					label="h2 Font Weight"
+					description="The weighting of h2 tags">
+					<option value="300">Light</option>
+					<option value="400">Normal</option>
+					<option value="700">Bold</option>
+				</field>
+				
+				<field name="h3TextSize" class="" type="number" default="18"
+					label="h3 Font Size"
+					description="The font size of h3 tags" />
+					
+				<field name="h3TextColor" class="" type="color" default="#333"
+					label="h3 Text Color"
+					description="The text color of h3 tags" />
+					
+				<field name="h3FontWeight" class="btn-group btn-group-yesno" type="radio" default="2"
+					label="h3 Font Weight"
+					description="The weighting of h3 tags">
+					<option value="300">Light</option>
+					<option value="400">Normal</option>
+					<option value="700">Bold</option>
+				</field>
+
+				<field name="logoFile" class="" type="media" default=""
+					label="TPL_CFC_LOGO_LABEL"
+					description="TPL_CFC_LOGO_DESC" />
+					
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+					
+				<field name="fontSize" class="" type="number" default="15"
+					label="TPL_CFC_FONT_SIZE_LABEL"
+					description="TPL_CFC_FONT_SIZE_DESC" />
+
+				<field name="googleFont"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_CFC_FONT_LABEL"
+					description="TPL_CFC_FONT_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="TPL_CFC_FONT_NAME_LABEL"
+					description="TPL_CFC_FONT_NAME_DESC" />
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,114 @@
+
+.grid {
+  color: #fff;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100px 1fr;
+  grid-template-areas: "nav hd" "sidebar sidebar" "article1 article1" "article2 article2" "ft ft";
+  > * {
+    background: #077;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+.grid nav {
+  padding: 0px;
+  grid-area: nav;
+  ul {
+    list-style: none;
+    padding: 0 20px;
+  }
+}
+
+header {
+  grid-area: hd;
+}
+
+footer {
+  grid-area: ft;
+}
+
+article1 {
+  grid-area: article1;
+}
+
+article2 {
+  grid-area: article2;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+@include breakpoint($exSmall) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "hd " "nav" "article1" "article2" "sidebar" "ft";
+  }
+  img{
+    width:80vw !important;
+  }
+}
+
+/*NB "..." lets current settings default from this breakpoint on up the list*/
+
+@include breakpoint($small ...) {
+  .grid {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "hd hd" "nav nav" "sidebar sidebar" "article1 article1" "article2 article2" "ft ft";
+  }
+
+  .article2 {
+    display: block;
+  }
+  
+  .grid nav {
+    padding: 0px;
+    grid-area: nav;
+    padding: 0px;
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+@include breakpoint($medium) {
+  .grid {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "hd hd" "sidebar nav" "sidebar article1" "ft article2";
+  }
+}
+
+@include breakpoint($large) {
+  .grid {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "sidebar hd" "sidebar nav" "sidebar article1" "sidebar article2" "sidebar ft";
+    //display: none;
+  }
+}
+
+@include breakpoint($larger) {
+  .grid {
+    grid-template-columns: 2fr 4fr;
+    grid-template-areas: "sidebar hd" "sidebar nav" "article2 article1" "article2 ft";
+  }
+}
+
+@include breakpoint($exLarge) {
+  .grid {
+    grid-template-columns: 2fr 2fr 4fr;
+    grid-template-areas: "sidebar hd hd" "sidebar article1 nav"  "sidebar article1 article2" "sidebar ft ft";
+  }
+}
+
+@include breakpoint($massive) {
+  .grid {
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-areas: "nav nav hd" "sidebar article1 article2" "ft ft ft";
+  }
+}
