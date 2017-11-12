@@ -23,7 +23,7 @@ include "index_header.php";
             <jdoc:include type="modules" name="left-off-page" /> </div>
           <?php endif; ?>
                <?
-    include "index_selector.php"
+    include "index_sizes.php"
     ?>
             <div class="grid">
               <header_left>
