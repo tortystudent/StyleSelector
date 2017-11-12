@@ -1,5 +1,4 @@
 //alert("loaded ok");
-console.log("!!!!!!!!!!FROG!!!!!!!!!!!!!");
 // $('.dropdown-toggle').dropdown()
 $('.collapse').collapse('show')
 $('#myModal').modal('hide')
@@ -99,12 +98,3 @@ function onClickMenu() {
         });
         });*/
       });
-
-
-
-
-
-
-
-
-console.log("!!!!!!!!!!DUCK!!!!!!!!!!!!!");
