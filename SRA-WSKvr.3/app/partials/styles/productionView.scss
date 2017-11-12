@@ -2,7 +2,8 @@ name{
   display:none;
 }
 
-sizes{
-  display:block;
-  z-index:1000;
+sizes,
+selector{
+  display:none;
+  z-index:0;
 }

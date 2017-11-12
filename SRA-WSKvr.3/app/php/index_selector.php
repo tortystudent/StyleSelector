@@ -1,19 +1,21 @@
 <!--Sizes :- Used for onscreen indication of the currently active breakpont-->
-        <sizes>
-          <div id="exsmall">ExSmall: - Phone</div>
-          <div id="small"> Small: - phone - landscape</div>
-          <div id="medium"> Medium: - Tablet Portrait</div>
-          <div id="large"> Large (Tablet: - Landscape) </div>
-          <div id="larger">Larger: - Desktop standard</div>
-          <div id="exlarge">exLarge: - Desktop large</div>
-          <div id="massive"> Massive: - Desktop Massive</div>
-          <div id="vast"> Vast: - Desktop Maxium possible</div>
-          **************************STYLE***********************
-          <? $dir="templates/StyleSelector/SRA-WSKvr.3/app/partials/styles"; $handle=opendir($dir); ?>
-            <form> Select a style
-              <select name="setStyle" onchange="this.form.submit()">
-                      <option selected value="#">Select Style</option>
-                      <?
+<setup>
+  <sizes>
+    <div id="exsmall">ExSmall: - Phone</div>
+    <div id="small"> Small: - phone - landscape</div>
+    <div id="medium"> Medium: - Tablet Portrait</div>
+    <div id="large"> Large (Tablet: - Landscape) </div>
+    <div id="larger">Larger: - Desktop standard</div>
+    <div id="exlarge">exLarge: - Desktop large</div>
+    <div id="massive"> Massive: - Desktop Massive</div>
+    <div id="vast"> Vast: - Desktop Maxium possible</div>
+  </sizes>
+  <selector> **************************STYLE***********************
+    <? $dir="../partials/styles"; $handle=opendir($dir); ?>
+      <form> Select a style
+        <select name="setStyle" onchange="this.form.submit()">
+          <option selected value="#">Select Style</option>
+          <?
               while ($file1 = readdir($handle)) {
               if ($file1<>".") {
               if ($file1<>".."){
@@ -29,13 +31,13 @@
               
               
               ?>
-                    </select>
-            </form> ************************COLOUR********************
-            <? $dir="templates/StyleSelector/SRA-WSKvr.3/app/partials/styles/colours"; $handle=opendir($dir); ?>
-              <form> Select a colour
-                <select name="setColour" onchange="this.form.submit()">
-                        <option selected value="#">Select Colour</option>
-                        <?
+        </select>
+      </form> ************************COLOUR********************
+      <? $dir="../partials/styles/colours"; $handle=opendir($dir); ?>
+        <form> Select a colour
+          <select name="setColour" onchange="this.form.submit()">
+            <option selected value="#">Select Colour</option>
+            <?
               while ($file1 = readdir($handle)) {
               if ($file1<>".") {
               if ($file1<>".."){
@@ -49,13 +51,13 @@
               
               
               ?>
-                      </select>
-              </form> *************************LAYOUT*****************
-              <? $dir="templates/StyleSelector/SRA-WSKvr.3/app/partials/styles/layouts"; $handle=opendir($dir); ?>
-                <form> Select a Layout
-                  <select name="setLayout" onchange="this.form.submit()">
-                          <option selected value="#">Select Layout</option>
-                          <?
+          </select>
+        </form> *************************LAYOUT*****************
+        <? $dir="../partials/styles/layouts"; $handle=opendir($dir); ?>
+          <form> Select a Layout
+            <select name="setLayout" onchange="this.form.submit()">
+              <option selected value="#">Select Layout</option>
+              <?
               while ($file1 = readdir($handle)) {
               if ($file1<>".") {
               if ($file1<>".."){
@@ -67,16 +69,16 @@
               
               
               ?>
-                        </select>
-                </form>
-                <?
+            </select>
+          </form>
+          <?
           
           
           if(isset($_GET["setStyle"])){
           $setStyle=$_GET["setStyle"];
           echo "select setStyle is => ".$setStyle;
-          $file = "templates/StyleSelector/SRA-WSKvr.3/app/partials/styles/".$setStyle;
-          $newStyle = 'templates/StyleSelector/SRA-WSKvr.3/app/partials/_style.scss';
+          $file = "../partials/styles/".$setStyle;
+          $newStyle = '../partials/_style.scss';
 
           /*************save style*********/
           error_reporting(E_ALL);
@@ -96,8 +98,8 @@
           echo "select setColour is => ".$setColour;
           error_reporting(E_ALL);
           ini_set('display_errors', 1);
-          $colourFile = "templates/StyleSelector/SRA-WSKvr.3/app/partials/styles/colours/".$setColour;
-          $newColour = 'templates/StyleSelector/SRA-WSKvr.3/app/partials/_colour.scss';
+          $colourFile = "../partials/styles/colours/".$setColour;
+          $newColour = '../partials/_colour.scss';
           
           
           if (!copy($colourFile, $newColour)) {
@@ -114,8 +116,8 @@
           
           error_reporting(E_ALL);
           ini_set('display_errors', 1);
-          $layoutFile = "templates/StyleSelector/SRA-WSKvr.3/app/partials/styles/layouts/".$setLayout;
-          $newLayout = 'templates/StyleSelector/SRA-WSKvr.3/app/partials/_layout.scss';
+          $layoutFile = "../partials/styles/layouts/".$setLayout;
+          $newLayout = '../partials/_layout.scss';
           if (!copy($layoutFile, $newLayout)) {
           echo "<br>failed to copy";
           } else {
@@ -147,16 +149,6 @@
                 echo "<br>  Last selected Layout is UNSET<br>";
             }
           ?>
-                  <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        </sizes>
-
+  </selector>
+</setup>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

@@ -46,7 +46,9 @@ var
   htmlSources = ['app/*.html'],
   phpSources = ['app/*.php'],
   phpFileSources = ['app/php/*.php'],
+  concatScriptSources = ['dist/scripts/*.*'],
   outputDir = '../';
+//concatScriptSources - where to move files FROM
 
 // Lint JavaScript
 gulp.task('lint', () =>
@@ -81,7 +83,7 @@ gulp.task('images', () =>
     .pipe($.size({title: 'copy'}))
 );*/
 
-gulp.task('copy', function () {
+gulp.task('copy', function () {//no html files...
   /*  gulp.src(htmlSources)
       .pipe(gulp.dest(outputDir))*/
   gulp.src(phpFileSources)
@@ -140,7 +142,8 @@ gulp.task('styles', () => {
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
     'app/styles/**/*.scss',
-    'app/styles/**/*.css'
+    'app/styles/**/*.css'//,
+    //'app/scripts/**/*.js' Not sure about this
   ])
     .pipe($.newer('.tmp/styles'))
     .pipe($.sourcemaps.init())
@@ -162,34 +165,56 @@ gulp.task('styles', () => {
 // Concatenate and minify JavaScript. Optionally transpiles ES2015 code to ES5.
 // to enable ES2015 support remove the line `"only": "gulpfile.babel.js",` in the
 // `.babelrc` file.
-gulp.task('scripts', () =>
+/*gulp.task('scripts', () =>
   gulp.src([
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
-      './app/scripts/application.js',
-      './app/scripts/classes.js',
-      //'./app/scripts/jquery.easing.1.3-2-min.js';
-      './app/scripts/skrollr.min.js'
-      // Other scripts
+      'app/scripts/application.js',
+      'app/scripts/classes.js',
+      'app/scripts/jquery.easing.1.3-2-min.js',
+      'app/scripts/skrollr.min.js'
+  // Other scripts
     ])
   .pipe($.newer('.tmp/scripts'))
-  .pipe($.sourcemaps.init())
-  .pipe($.babel())
-  .pipe($.sourcemaps.write())
-  .pipe(gulp.dest('.tmp/scripts'))
+  /*.pipe($.sourcemaps.init())*/
+  //.pipe($.babel())
+  /*.pipe($.sourcemaps.write())*/
+ /* .pipe(gulp.dest('.tmp/scripts'))
   .pipe($.concat('main.min.js'))
   .pipe($.uglify({
     preserveComments: 'some'
-  }))
-  // Output files
-  .pipe($.size({
-    title: 'scripts'
-  }))
-  .pipe($.sourcemaps.write('.'))
-  .pipe(gulp.dest(outputDir + '/scripts'))
-  .pipe(gulp.dest('.tmp/scripts'))
+  }))*/
+
+gulp.task('scripts', () =>
+    gulp.src([
+      // Note: Since we are not using useref in the scripts build pipeline,
+      //       you need to explicitly list your scripts here in the right order
+      //       to be correctly concatenated
+      'app/scripts/application.js'/*,
+      'app/scripts/classes.js',
+      'app/scripts/jquery.easing.1.3-2-min.js',
+      'app/scripts/skrollr.min.js'*/
+      // Other scripts
+    ])
+      .pipe($.newer('.tmp/scripts'))
+      .pipe($.sourcemaps.init())
+      .pipe($.babel())
+      .pipe($.sourcemaps.write())
+      .pipe(gulp.dest('.tmp/scripts'))
+      .pipe($.concat('main.min.js'))
+      .pipe($.uglify({preserveComments: 'some'}))
+      // Output files
+      .pipe($.size({title: 'scripts'}))
+      .pipe($.sourcemaps.write('.'))
+      .pipe(gulp.dest('dist/scripts'))// where the concatenated js ends up
+        
 );
+          
+gulp.task('copy-scripts', () => {
+  return gulp.src(['dist/scripts/*.js','dist/scripts/*.map'])
+.pipe(gulp.dest(outputDir + '/scripts/'))
+});// task that should copy contents of dis to the right place for Joomla use
 
 // Scan your HTML for assets & optimize them
 gulp.task('html', () => {
@@ -225,7 +250,7 @@ gulp.task('clean', () => del(['.tmp', outputDir + '/*', '!' + outputDir + '/.git
 }));
 
 // Watch files for changes & reload
-gulp.task('serve', ['scripts', 'styles', 'copy'], () => {
+gulp.task('serve', ['scripts', 'styles', 'copy','copy-scripts'], () => {
   browserSync({
     notify: false,
     // Customize the Browsersync console logging prefix
@@ -237,12 +262,16 @@ gulp.task('serve', ['scripts', 'styles', 'copy'], () => {
     //       will present a certificate warning in the browser.
     // https: true,
     proxy: "localhost:2237/SRAWSKTestBed/"
+    //auto show updated Joomla output
   });
 
 
   gulp.watch([partialSources], ['styles', 'copy']);
   gulp.watch([sassSources], ['styles']);
-  gulp.watch(['app/scripts/**/*.js'], ['lint', 'scripts']);
+  /*gulp.watch(['app/scripts/*.js'], ['lint', 'scripts']);*/
+  gulp.watch([concatScriptSources], [ 'copy-scripts']);// auot copy files to right place on JS change
+  
+  
 });
 
 // Build and serve the output from the dist build

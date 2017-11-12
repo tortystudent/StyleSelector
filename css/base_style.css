@@ -2731,7 +2731,6 @@ form * { box-sizing:content-box; }
   .mobile-menu-bar {
     display:block;
     position:fixed;
-    z-index:9999999;
     opacity:0.9;
     font-size:26px;
   }

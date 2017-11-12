@@ -1,0 +1,21 @@
+/* line 1, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/StyleSelector/SRA-WSKvr.3/app/partials/styles/Show_Sizes.scss */
+name {
+  display: none; }
+
+/* line 4, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/StyleSelector/SRA-WSKvr.3/app/partials/styles/Show_Sizes.scss */
+setup {
+  display: flex;
+  justify-content: center; }
+
+/* line 8, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/StyleSelector/SRA-WSKvr.3/app/partials/styles/Show_Sizes.scss */
+sizes {
+  display: block;
+  position: fixed;
+  z-index: 999999;
+  width: auto; }
+
+/* line 16, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/StyleSelector/SRA-WSKvr.3/app/partials/styles/Show_Sizes.scss */
+selector {
+  display: none; }
+
+/*# sourceMappingURL=Show_Sizes.css.map */
