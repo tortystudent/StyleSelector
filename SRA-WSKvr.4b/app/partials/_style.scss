@@ -1,9 +1,113 @@
-name{
-  display:none;
+name {
+  display: none;
 }
 
-sizes,
-selector{
-  display:none;
-  z-index:0;
+sizes {
+  display: block;
+  z-index: 1000;
 }
+.float_bottom{
+  display:none;
+}
+selector {
+  display: block;
+}
+
+.grid {
+  color: #fff;
+/*  display: grid;
+  grid-gap: 10px;*/
+/*  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "hdr_l hdr_r" "hero_fw hero_fw" "nav nav" "sidebar sidebar" "main main" "ftl ftr";*/
+  > * {
+    background: #077;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+
+
+
+@include breakpoint($exSmall) {
+  .grid {
+
+
+    grid-template-columns: 1fr;
+    grid-template-areas: "hdr_l" "hdr_r" "nav" "hero_fw" "above_content" "main" "sidebar" "ftr" "ftl" "ftr" ;
+  }
+
+
+
+  img {
+    width: 80vw !important;
+  }
+}
+
+/*NB "..." lets current settings default from this breakpoint on up the list*/
+
+/*@include breakpoint($small) {
+
+  .grid {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+      "hdr_l hdr_l" 
+      "hdr_r hdr_r" 
+      "nav nav" 
+      "hero_fw hero_fw" 
+      "above_content above_content" 
+      "main main" 
+      "sidebar sidebar"  
+      "ftl ftl" 
+      "ftr ftr";
+  }
+}*/
+
+/*@include breakpoint($medium) {
+  .grid {
+
+    .above_content {
+      display: none !important;
+      background-color: #f00;
+    }
+
+    grid-template-columns: 1fr;
+    grid-template-areas: "hdr_l" "hdr_r" "nav" "hero_fw" "above_content" "main" "sidebar" "ftr" "ftl" "ftr" ;
+  }
+}*/
+/*
+@include breakpoint($large) {
+  .grid {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "hdr_l hdr_r" "hero_fw hero_fw" "nav nav" "sidebar sidebar" "article1 article1" "article2 article2" "ft ft"; //display: none;
+  }
+}
+
+@include breakpoint($larger) {
+  .grid {
+    grid-template-columns: 2fr 4fr;
+    grid-template-areas: "hdr_l hdr_r" "hero_fw hero_fw" "nav nav" "sidebar article1" " sidebar article2" "ft ft";
+  }
+}
+
+@include breakpoint($exLarge) {
+  .grid {
+    grid-template-columns: 2fr 2fr 4fr;
+    grid-template-areas: "hdr_l hdr_l hdr_r" "hero_fw hero_fw hero_fw" "sidebar hd hd" "nav nav nav" "sidebar article1 article1" "sidebar article1 article2" "sidebar ft ft";
+  }
+}
+
+@include breakpoint($massive) {
+  .grid {
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-areas: "hdr_l hdr_l hdr_r" "hero_fw hero_fw hero_fw" "sidebar hd hd" "nav nav nav" "sidebar article1 article1" "sidebar article1 article2" "sidebar ft ft";
+  }
+}
+
+
+@include breakpoint($vast) {
+  .grid {
+    grid-template-columns: 2fr 4fr 4fr 2fr;
+    grid-template-areas: "hdr_l hdr_l hdr_r hdr_r" "hero_fw hero_fw hero_fw hero_fw" "sidebar hd hd hd" "sidebar nav nav nav" "sidebar article1 article1 article1" "sidebar article2 article2 article2" "sidebar ft ft ft";
+  }
+}*/

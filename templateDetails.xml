@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.1" type="template" client="site">
-	<name>cfc</name>
+	<name>Selector</name>
 	<version>1.0</version>
-	<creationDate>4/30/2012</creationDate>
-	<author>Kyle Ledbetter</author>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<copyright>Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.</copyright>
-	<description>TPL_CFC_XML_DESCRIPTION</description>
+	<creationDate>4/30/2017</creationDate>
+	<author>Simon Anthony</author>
+	<authorEmail>simon.anthony at tortysoft.com</authorEmail>
+	<copyright>Copyright (C) 2017 Tortoisesoft Enterprises All rights reserved.</copyright>
+	<description>TPL_SRASELECTOR_XML_DESCRIPTION</description>
 	<files>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
@@ -45,8 +45,8 @@
 		<position>debug</position>
 	</positions>
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.tpl_cfc.ini</language>
-		<language tag="en-GB">en-GB/en-GB.tpl_cfc.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_SRASelector.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_SRASelector.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
@@ -132,8 +132,8 @@
 				</field>
 
 				<field name="logoFile" class="" type="media" default=""
-					label="TPL_CFC_LOGO_LABEL"
-					description="TPL_CFC_LOGO_DESC" />
+					label="TPL_SRASELECTOR_LOGO_LABEL"
+					description="TPL_SRASELECTOR_LOGO_DESC" />
 					
 				<field name="sitetitle"  type="text" default=""
 					label="JGLOBAL_TITLE"
@@ -146,23 +146,23 @@
 					filter="string" />
 					
 				<field name="fontSize" class="" type="number" default="15"
-					label="TPL_CFC_FONT_SIZE_LABEL"
-					description="TPL_CFC_FONT_SIZE_DESC" />
+					label="TPL_SRASELECTOR_FONT_SIZE_LABEL"
+					description="TPL_SRASELECTOR_FONT_SIZE_DESC" />
 
 				<field name="googleFont"
 					type="radio"
 					class="btn-group btn-group-yesno"
 					default="1"
-					label="TPL_CFC_FONT_LABEL"
-					description="TPL_CFC_FONT_DESC"
+					label="TPL_SRASELECTOR_FONT_LABEL"
+					description="TPL_SRASELECTOR_FONT_DESC"
 				>
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
 
 				<field name="googleFontName" class="" type="text" default="Open+Sans"
-					label="TPL_CFC_FONT_NAME_LABEL"
-					description="TPL_CFC_FONT_NAME_DESC" />
+					label="TPL_SRASELECTOR_FONT_NAME_LABEL"
+					description="TPL_SRASELECTOR_FONT_NAME_DESC" />
 
 			</fieldset>
 		</fields>
