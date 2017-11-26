@@ -1,12 +1,5 @@
 wrapper{  transition: all 1.5s ease-in-out;}
-name{
-  display:block;
-}
 
-sizes{
-  display:block;
-  z-index:1000;
-}
 .grid {
   color: #fff;
   display: grid;
@@ -61,7 +54,7 @@ aside {
 
 /*NB "..." lets current settings default from this breakpoint on up the list*/
 
-@include breakpoint($small ...) {
+@include breakpoint($small) {
   .grid {
     grid-template-columns: 1fr 4fr;
     grid-template-areas: "hd hd" "nav nav" "sidebar sidebar" "article1 article1" "article2 article2" "ft ft";
