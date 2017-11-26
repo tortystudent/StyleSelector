@@ -1,0 +1,12 @@
+/* line 1, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/Show_Sizes.scss */
+name {
+  display: none !important; }
+
+/* line 5, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/Show_Sizes.scss */
+sizes {
+  display: block !important;
+  position: fixed;
+  z-index: 999999 !important;
+  width: auto; }
+
+/*# sourceMappingURL=Show_Sizes.css.map */
