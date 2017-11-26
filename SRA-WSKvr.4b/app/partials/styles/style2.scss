@@ -21,71 +21,7 @@ body {
     padding: 0 20px;
   }
 }
-.grid {
-  grid-gap: 10px;
-  color: #fff;
-  display: grid;
-  > * {
-    background: #077;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  header_left {
-    grid-area: hdr_l;
-  }
-  header_right {
-    grid-area: hdr_r;
-  }
-  hero_full_width {
-    grid-area: hero_fw;
-    img {
-      width: 85vw;
-      display:flex;
-    }
-  }
-  nav {
-    grid-area: nav;
-  }
-  above_content {
-    grid-area: abv_cont;
-  }
-  main {
-    grid-area: main;
-  }
-  below_content {
-    grid-area: bc;
-  }
-  below_content-1 {
-    grid-area: bc_1;
-  }
-  below_content-2 {
-    grid-area: bc_2;
-  }
-  below_content-3 {
-    grid-area: bc_3;
-  }
-  mobile_sidebar-left {
-    grid-area: msb_l;
-  }
-  mobile_sidebar-right {
-    grid-area: msb_r;
-  }
-  login_article {
-    grid-area: login;
-  }
-  footer {
-    grid-area: ftr;
-  }
-  footer_right {
-    grid-area: ftr_r;
-  }
-  footer_left {
-    grid-area: ftr_l;
-  }
-  float_bottom {
-    grid-area: flt_btm;
-  }
-}
+
 @include breakpoint($exSmall) {
   .grid {
     grid-template-columns: 1fr;

@@ -1908,8 +1908,11 @@ header ul.nav.menu li a:hover {
   font-size:28px;
   line-height:140%;
   text-align:center;
-  height:auto;
+  height:170px;
   padding-top:0px;
+  background-color:#5A5570;
+  background-image:url('../images/heading-bg.jpg');
+  background-repeat:repeat-x;
 }
 .hero-row img {
   -webkit-border-radius:0px;
@@ -2615,11 +2618,11 @@ form * { box-sizing:content-box; }
 }
 .off-screen-left li.level3 a { line-height:26px !important; }
 .login { overflow:auto; }
-@media screen and (max-width: 1052px) {
+/*@media screen and (max-width: 1052px) {
   html {
     width:100%;
     max-width:100%;
-  }
+  }*/
   body {
     max-width:100%;
     background-color:;
@@ -2731,6 +2734,7 @@ form * { box-sizing:content-box; }
   .mobile-menu-bar {
     display:block;
     position:fixed;
+    z-index:9999999;
     opacity:0.9;
     font-size:26px;
   }
@@ -2783,6 +2787,8 @@ form * { box-sizing:content-box; }
   h2:first-child { margin-top:0px; }
   .item-page { margin-top:0px; }
 }
+/*
+
 @media screen and (max-width: 670px) {
   .feature { display:none; }
 }
@@ -2821,3 +2827,4 @@ form * { box-sizing:content-box; }
   div.header-inner.clearfix { height:auto !important; }
   div.controls { width:100%; }
 }
+*/
