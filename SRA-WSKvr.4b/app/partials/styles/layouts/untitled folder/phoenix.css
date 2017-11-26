@@ -1,0 +1,938 @@
+/* line 1, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+body {
+  background: url(../images/background-tile.gif);
+  background-color: #e0e0e0;
+  color: #111;
+  line-height: 19px;
+  margin-top: -20px;
+  font-family: "Trebuchet MS",arial;
+  font-size: 14px;
+  overflow-x: hidden; }
+
+/* line 11, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+body.site {
+  border-top: 0px; }
+
+/* line 14, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div.container {
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff; }
+
+/* line 22, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.off-screen-left {
+  display: none;
+  position: absolute;
+  background-color: #ffffff; }
+
+/* line 28, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.span8 {
+  width: 590px; }
+
+/* line 31, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.span4 {
+  width: 250px; }
+
+/* line 34, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+aside {
+  float: right;
+  margin-right: -40px; }
+
+/* line 39, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+img {
+  border: 0 none; }
+
+/* line 42, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+a {
+  color: #888;
+  text-decoration: none; }
+
+/*********************header area***********************/
+/* line 48, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+section#header {
+  width: 100%;
+  height: 100px; }
+
+/* line 55, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#top_logo {
+  position: absolute;
+  top: 20px;
+  margin-left: 30px; }
+
+/* line 61, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#contact {
+  position: absolute;
+  top: -10px;
+  margin-left: 640px; }
+
+/* line 68, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#contact div.custom {
+  color: #888888;
+  font-size: 16px; }
+
+/* line 73, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#contact div.custom span {
+  color: #66bd3b;
+  font-size: 16px;
+  font-weight: 600; }
+
+/* line 80, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#search {
+  position: absolute;
+  top: 162px;
+  margin-left: 708px;
+  z-index: 20;
+  background: url(../images/search_box.png) no-repeat;
+  height: 26px;
+  width: 210px; }
+
+/* line 90, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#search label {
+  display: none; }
+
+/* line 94, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#search input {
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding-left: 6px;
+  font-size: 12px;
+  margin-top: -12px; }
+
+/* line 103, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#search input.button {
+  position: relative;
+  top: 10px; }
+
+/*********************top menu***********************/
+/* line 109, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+nav#menu {
+  margin-left: -20px;
+  height: 80px;
+  font-size: 15px;
+  background: url(../images/menubar.png) no-repeat;
+  width: 993px; }
+
+/* line 117, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+#menu ul {
+  list-style: none;
+  height: 32px;
+  padding-left: 65px; }
+
+/* line 124, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+#menu li a {
+  color: #fff;
+  text-decoration: none;
+  float: left;
+  margin-top: 23px;
+  padding-left: 6px;
+  font-weight: 600;
+  padding-right: 10px; }
+
+/* line 135, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+#menu a:hover {
+  text-decoration: underline; }
+
+/* line 139, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+#menu li.current a {
+  color: #fff;
+  background: url(../images/menubar_pinch.gif) 0px -6px no-repeat;
+  height: 32px;
+  padding-top: 11px;
+  margin-top: 12px; }
+
+/**************** Main content****************************/
+/* line 151, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+section#header_pic {
+  padding-top: 20px;
+  margin-top: -20px;
+  margin-bottom: 60px; }
+
+/* line 157, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#content {
+  margin-top: 20px;
+  padding: 20px 20px 20px 50px;
+  background-color: #fff;
+  background: rgba(22, 19, 20, 0.8);
+  background-color: #fff;
+  float: left;
+  width: 880px; }
+
+/* line 170, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#articles {
+  width: 570px; }
+
+/* line 175, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+h1, h2, h3,
+h1 a, h2 a, h3 a {
+  color: #66bd3b;
+  font-weight: 300; }
+
+/**************** RIGHT column ****************************/
+/* line 183, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.controls {
+  position: relative !important; }
+
+/* line 186, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.controls::after {
+  display: none; }
+
+/* line 190, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col {
+  float: right;
+  margin-top: 5px;
+  width: 290px; }
+
+/* line 196, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col h2 {
+  color: #fff;
+  margin: 10px -100px 0px 0px;
+  font-size: 38px; }
+
+/* line 203, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news_top {
+  margin-top: 15px;
+  background-color: #49aa2d;
+  background: url(../images/tag_tile.gif);
+  padding: 10px 20px 10px 20px;
+  width: 292px;
+  xheight: 370px; }
+
+/* line 212, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div.foxcontainer form.foxform div button.foxbutton {
+  position: relative;
+  top: -20px; }
+
+/* line 220, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news_top div {
+  font-family: "Trebuchet MS";
+  color: #fff;
+  font-style: italic;
+  width: 260px;
+  font-size: 14px; }
+
+/* line 228, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news_top div a {
+  color: #fff;
+  text-decoration: underline; }
+
+/* line 233, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news_top div a:hover {
+  color: #3d822f; }
+
+/* line 237, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news_bottom {
+  background: url(../images/bottom_flag.png) -2px 0px;
+  padding: 0px 20px 0px 20px;
+  width: 295px;
+  height: 15px;
+  margin-left: -4px; }
+
+/* line 246, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news_top h3 {
+  display: none; }
+
+/* line 250, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news ul {
+  padding-left: 20px; }
+
+/* line 255, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_tweet ul {
+  padding-left: 0px;
+  list-style: none; }
+
+/* line 262, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#social_icons {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 60px;
+  z-index: 100; }
+
+/* line 269, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_tweet p {
+  padding-right: 20px;
+  padding-bottom: 10px; }
+
+/* line 275, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_tweet div#twitter_div a#follow_me {
+  padding-left: 0px;
+  display: none; }
+
+/* line 280, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_tweet_top {
+  background: url(../images/Tweet_top.gif) 0px 0px;
+  padding: 0px 20px 0px 20px;
+  width: 264px;
+  height: 40px; }
+
+/* line 287, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_tweet {
+  margin-top: -20px;
+  background: url(../images/tweet_middle.gif) 0px 0px repeat-y;
+  padding-left: 24px;
+  width: 272px;
+  font-size: 12px; }
+
+/* line 295, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_tweet_bottom {
+  margin-top: -20px;
+  background: url(../images/tweet_bottom.gif) 0px 0px no-repeat;
+  padding-left: 30px;
+  height: 70px;
+  width: 266px; }
+
+/* line 309, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_quote_top {
+  background: url(../images/quote_top_bird.png) 0px 0px no-repeat;
+  height: 100px;
+  position: relative;
+  width: 350px;
+  left: 20px;
+  top: -22px;
+  z-index: 2; }
+
+/* line 319, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_quote {
+  margin-top: -93px;
+  margin-bottom: 150px;
+  background: url(../images/tag_tile.gif) 0px -3px;
+  background-color: #49aa2d;
+  padding: 10px 20px 20px 20px;
+  color: #fff;
+  font-style: italic;
+  width: 292px;
+  height: 100%; }
+
+/* line 332, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_quote div {
+  width: 236px;
+  padding-right: 36px;
+  margin-left: 36px; }
+
+/* line 338, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_quote div span {
+  /* small text atribution*/
+  font-size: 11px;
+  position: absolute;
+  margin-top: -40px; }
+
+/* line 344, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_quote_bottom {
+  background: url(../images/bottom_quote.png) 190px 0px no-repeat;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-top: -40px;
+  right: -20px; }
+
+/* line 353, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#buy_now_badge {
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 20px; }
+
+/**************** Footer content****************************/
+/* line 362, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+footer {
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+  background: rgba(22, 19, 20, 0.4);
+  font-size: 11px;
+  color: #fff;
+  line-height: 1.4em;
+  height: 3em;
+  height: 130px; }
+
+/* line 379, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+footer a {
+  color: #fff;
+  text-decoration: underline; }
+
+/* line 383, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+footer .container {
+  background: transparent; }
+
+/* line 388, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 396, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+section#Judith_Phoenix_Meese_top span {
+  color: #000;
+  font-size: 10px;
+  font-style: italic;
+  position: relative;
+  left: 0px;
+  top: -6px; }
+
+/* line 405, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#Contact_details {
+  position: relative;
+  margin-left: -125px;
+  margin-top: 20px; }
+
+/* line 411, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#Contact_details div {
+  float: left;
+  margin-left: 80px; }
+
+/* line 416, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#Contact_details div#col2 {
+  float: left;
+  margin-left: 40px; }
+
+/* line 421, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+#footer_icons {
+  float: right;
+  margin-right: -14px;
+  top: 4px; }
+
+/* line 427, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news_top div.moduletable div.custom img {
+  position: relative;
+  left: 40px; }
+
+/* line 432, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news_top div.qq-upload-button {
+  background-color: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 10px rgba(192, 192, 192, 0.7) inset, 0 0 7px rgba(192, 192, 192, 0.7);
+  color: #505050;
+  margin: 0 3px !important;
+  padding: 5px !important;
+  width: 223px;
+  height: 20px;
+  margin-bottom: 20px;
+  line-height: 20px; }
+
+/* line 445, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.foxform {
+  margin-bottom: -10px; }
+
+/* line 449, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+div#right_col_news_top div.moduletable div.foxcontainer ul {
+  list-style: none;
+  padding: none;
+  margin: none; }
+
+/* line 465, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: -100px; }
+
+/* line 472, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.mobile-menu-bar {
+  width: 100%;
+  height: 50px;
+  background: #666;
+  color: #fff;
+  display: none; }
+
+/* line 479, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.cover {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.006;
+  filter: alpha(opacity=0.6);
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  position: absolute;
+  z-index: 20;
+  display: none;
+  margin-top: -35px; }
+
+@media screen and (max-width: 979px) {
+  /* line 501, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  body,
+  div.container {
+    width: 852px; }
+  /* line 506, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  aside {
+    float: left;
+    padding-left: 46px; }
+  /* line 513, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div#contact {
+    margin-left: 65%; }
+  /* line 516, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  nav#menu {
+    background: url(../images/menubar893.png) no-repeat; } }
+
+@media screen and (max-width: 850px) {
+  /* line 523, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div.container {
+    width: 598px; }
+  /* line 526, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  nav#menu {
+    background: url(../images/menubar640.png) no-repeat; }
+  /* line 529, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div#contact {
+    margin-left: 54%; }
+    /* line 531, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+    div#contact div.custom {
+      font-size: 14px; }
+      /* line 533, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+      div#contact div.custom a {
+        font-size: 14px; }
+  /* line 539, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  aside {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    padding-left: 0px;
+    padding-right: 50px; }
+  /* line 548, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div#right_col_news_bottom {
+    display: none; }
+  /* line 552, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div#right_col_quote_top {
+    width: 289px; }
+  /* line 555, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .span8 {
+    margin-left: 5%;
+    margin-right: 5%;
+    float: none;
+    width: 90% !important; }
+  /* line 562, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-modal.open .morph-content {
+    top: 0% !important;
+    left: 0% !important;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+    transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s; } }
+
+@media screen and (max-width: 400px) {
+  /* line 574, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-fixed,
+  .morph-button-fixed .morph-content {
+    width: 104px;
+    height: 34px; }
+  /* line 579, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-fixed > button {
+    font-size: 75%; }
+  /* line 582, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-sidebar > button {
+    font-size: 1.6em; }
+  /* line 585, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-inflow .morph-content .morph-clone {
+    font-size: 0.9em; }
+  /* line 588, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-modal-4,
+  .morph-button-modal-4 .morph-content {
+    width: 220px;
+    height: 120px; }
+  /* line 593, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-modal-4 > button {
+    font-size: 100%;
+    line-height: 50px; }
+  /* line 597, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-modal-4 > button span {
+    display: block; }
+  /* line 600, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-modal-4 .morph-clone {
+    right: 83px;
+    bottom: 26px; }
+  /* line 604, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-sidebar,
+  .morph-button-sidebar .morph-content {
+    width: 100% !important;
+    height: 60px !important; }
+  /* line 609, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-sidebar {
+    bottom: 0px;
+    left: 0px; }
+  /* line 613, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .morph-button-sidebar.open .morph-content {
+    height: 100% !important; } }
+
+/* line 617, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.morph-button {
+  width: 103px;
+  height: 34px;
+  margin: 0px !important;
+  padding: 0px; }
+
+/* line 623, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.morph-button button {
+  line-height: 0px;
+  background: #eb9330;
+  color: #fff;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease; }
+
+/* line 636, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.morph-button button:hover {
+  background: #CDAD70;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease; }
+
+/* line 647, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.formResponsive .formHorizontal .formControls {
+  margin-left: 0px; }
+
+/* line 650, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.formResponsive input[type="submit"] {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease; }
+
+/* line 660, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.formResponsive input[type="submit"]:hover {
+  background: #CDAD70;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease; }
+
+/* line 671, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.content-style-form label {
+  margin-top: 0px;
+  padding-top: 0px !important; }
+
+/* line 675, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.testimonials {
+  background: #08011E;
+  color: #fff;
+  padding: 30px; }
+
+/* line 680, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.testimonials .container {
+  background: #08011E; }
+
+/* line 683, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.testimonials .testimonial {
+  text-align: center;
+  background: #B09460;
+  padding: 10px;
+  height: 100px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-bottom: 10px; }
+
+/* line 699, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 30px; }
+
+@media screen and (max-width: 1052px) {
+  /* line 704, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  html {
+    width: 100%;
+    max-width: 100%; }
+  /* line 708, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  body {
+    max-width: 100%; }
+  /* line 711, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  body.site {
+    padding: 20px 0px 0px 0px; }
+  /* line 714, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .body .container.main {
+    width: 100%;
+    max-width: 100%; }
+  /* line 718, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .brand img {
+    width: 100%; }
+  /* line 721, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .body .container {
+    width: 100%; }
+  /* line 724, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .pointer {
+    display: none; }
+  /* line 727, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .container .row {
+    margin-right: 0px; } }
+
+@media screen and (max-width: 1052px) {
+  /* line 732, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  body.site {
+    width: 100%; }
+  /* line 735, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .body {
+    width: 100%; }
+  /* line 738, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .body .container.main {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 3%;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  /* line 747, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .container {
+    padding-left: 0;
+    padding-right: 0; }
+  /* line 751, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  #content {
+    width: 100%; }
+  /* line 754, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .item-page {
+    width: 97.5%; }
+  /* line 757, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .row-fluid .span3 {
+    width: 100%;
+    margin-left: 0px; }
+  /* line 761, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .well {
+    float: left;
+    width: 60%; }
+  /* line 765, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .row-fluid [class*="span"] {
+    margin-left: 0px; }
+  /* line 768, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div#foxcontainer_m108 {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  /* line 772, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .wk-twitter {
+    padding-top: 30px; }
+  /* line 775, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div.controls {
+    width: 88%; }
+  /* line 778, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .quote {
+    display: none; }
+  /* line 781, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .footer {
+    padding-bottom: 10px;
+    margin-bottom: 0px; }
+  /* line 786, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .footer .container {
+    width: 100%; }
+  /* line 789, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .footer .pull-right {
+    margin-right: 2%;
+    width: 180px; }
+  /* line 793, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .footer .custom {
+    margin-left: 2%; }
+  /* line 796, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  #aside {
+    display: none; }
+  /* line 799, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .feature .text-holder .feature-title {
+    font-size: 26px; } }
+
+@media screen and (max-width: 912px) {
+  /* line 804, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .header-right {
+    margin-top: -9px;
+    margin-left: 85px; }
+  /* line 808, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .pull-right {
+    float: left !important; } }
+
+@media screen and (max-width: 768px) {
+  /* line 813, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .top-menu ul li a {
+    font-weight: 400; }
+  /* line 816, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .feature .text-holder .feature-title {
+    font-size: 32px; }
+  /* line 819, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .feature .text-holder .feature-intro-text {
+    display: none; } }
+
+@media screen and (max-width: 722px) {
+  /* line 824, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  header .pull-left {
+    float: none !important; }
+  /* line 827, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  header .pull-right {
+    display: none; }
+  /* line 830, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  header div.header-inner.clearfix {
+    height: 108px; }
+  /* line 833, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .top-menu ul li a {
+    font-weight: 400; }
+  /* line 836, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .hero {
+    margin-top: 0px;
+    margin-bottom: 2%; } }
+
+@media screen and (max-width: 722px) {
+  /* line 842, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div.container {
+    width: 100%; }
+  /* line 845, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div#contact {
+    display: none; }
+  /* line 848, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  aside {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
+  /* line 854, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div#right_col_news_bottom,
+  .wk-twitter {
+    display: none; }
+  /* line 859, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div#right_col_quote_top {
+    width: 289px; }
+  /* line 863, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .well {
+    width: 100%; }
+  /* line 866, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .banners {
+    display: none; }
+  /* line 869, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  #mobile_menu {
+    display: none !important; }
+  /* line 872, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .top-menu {
+    display: none; }
+  /* line 875, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .header {
+    margin-bottom: 0px;
+    margin-top: 36px; }
+  /* line 879, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  body.site {
+    height: 100%;
+    margin-top: 30px; }
+  /* line 883, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  nav {
+    display: none; }
+  /* line 886, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .mobile-menu-bar {
+    display: block;
+    position: fixed;
+    z-index: 9999999;
+    opacity: 0.9;
+    font-size: 26px;
+    margin-top: -86px; }
+  /* line 894, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .mobile-menu-btn {
+    margin-top: 15px;
+    margin-left: 13px; }
+  /* line 898, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .mobile-menu-btn span {
+    font-size: 20px;
+    margin-left: 5px; }
+  /* line 902, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .mobile-menu-button {
+    width: 37px;
+    height: 36px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    cursor: pointer;
+    padding-left: 47px;
+    padding-top: 14px;
+    font-size: 25px; }
+  /* line 914, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .finder input {
+    width: 68%;
+    margin-right: 3%; }
+  /* line 918, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  form {
+    margin-bottom: 2%; }
+  /* line 921, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  input[type='text'],
+  input[type='number'],
+  textarea {
+    font-size: 16px; }
+  /* line 926, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .off-screen-left {
+    display: none; }
+  /* line 929, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .off-screen-left .menu li {
+    font-size: 25px;
+    line-height: 36px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px; }
+  /* line 938, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .hero {
+    margin-left: -60%; }
+  /* line 941, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .multi-column-layout .item .item-intro {
+    height: auto; } }
+
+@media screen and (max-width: 670px) {
+  /* line 946, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .feature {
+    display: none; } }
+
+@media screen and (max-width: 828px) {
+  /* line 951, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .footer-right {
+    margin-left: 24px;
+    margin-top: 20px; }
+  /* line 955, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .footer-right .for-credit {
+    margin-top: 20px !important; } }
+
+@media screen and (max-width: 510px) {
+  /* line 960, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  header .pull-left {
+    position: relative;
+    left: auto;
+    padding-left: 10px;
+    max-width: 100%; }
+  /* line 966, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  header .pull-left img {
+    width: 100%; }
+  /* line 969, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .hero {
+    margin-top: 0px;
+    margin-left: -100%; }
+  /* line 973, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .container-fluid {
+    overflow: hidden; }
+  /* line 976, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .multi-column-layout .item .read-more {
+    width: 99%; } }
+
+@media screen and (max-width: 398px) {
+  /* line 982, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  .pull-left {
+    position: relative !important;
+    left: auto !important;
+    margin-left: auto !important; }
+  /* line 987, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div.header-inner.clearfix {
+    height: auto !important; }
+  /* line 990, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/phoenix.scss */
+  div.controls {
+    width: 100%; } }
+
+/*# sourceMappingURL=phoenix.css.map */
