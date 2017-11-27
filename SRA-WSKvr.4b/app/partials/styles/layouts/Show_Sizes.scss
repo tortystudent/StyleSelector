@@ -2,10 +2,32 @@ name{
   display:none !important
 }
 
-sizes{
-  display:block !important;
-  position:fixed;
-  z-index:999999 !important;
-  width:auto;
-  
+sizes {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  // display:none;
+  position: fixed;
+  z-index:10;
+  top: 10px;
+  div {
+    width: auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.6;
+    position:absoulute;
+    z-index:100;
+  }
+  div#exsmall,
+  div#small,
+  div#medium,
+  div#large,
+  div#larger,
+  div#exlarge,
+  div#massive,
+  div#vast {
+    display: none;
+  }
 }

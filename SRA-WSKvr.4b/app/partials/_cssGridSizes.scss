@@ -1,12 +1,11 @@
 // breakpoint settings - requires scss breakpoint
 // colours mentioned are diplayed as body backgrounds
 // when "Partials/_cssGridIndicator.scss" is enabled
-
-$exSmall: 0 480px; //RED
-$small: 480px 600px; //ORANGE
-$medium: 600px 800px; //YELLOW
-$large: 800px 1000px; //GREEN
-$larger: 1000px 1200px; //CYAN
-$exLarge: 1200px 1400px; //BLUE
-$massive: 1400px 1600px; //MAGENTA
-$vast:1600px 5000px; //WHITE
+$exSmall: 0 320px; //RED
+$small: 320px 480px; //ORANGE
+$medium: 480px 720px; //YELLOW
+$large: 720px 960px; //GREEN
+$larger: 960px 1024px; //CYAN
+$exLarge: 1024px 1200px; //BLUE
+$massive: 1200px 1400px; //MAGENTA
+$vast:1400px 5000px; //WHITE

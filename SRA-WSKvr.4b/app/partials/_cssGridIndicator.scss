@@ -1,31 +1,6 @@
 // Grid helper settings
 //top floating name indicator
-sizes {
-  width: 100%;
-  display: grid;
-  justify-content: center; // display:none;
-  position: fixed;
-  top: 5px;
-  div {
-    width: auto;
-    text-align: center;
-    background: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    opacity: 0.6;
-  }
-  div#exsmall,
-  div#small,
-  div#medium,
-  div#large,
-  div#larger,
-  div#exlarge,
-  div#massive,
-  div#vast {
-    display: none;
-    z-index:9999999;
-  }
-}
+
 body{  transition: all 1.5s ease-in-out;}
 
 // size colouring in rainbow order

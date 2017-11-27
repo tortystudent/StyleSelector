@@ -4,27 +4,26 @@ include "index_header.php";
 ?>
   <html>
 
-  <body class="site<?php echo ' ' . $this->params->get('class-suffix') ?>">
+  <body class="site<?php echo ' '.$this->params->get('class-suffix') ?>">
     <!-- Mobile sidebar -->
     <div class='off-screen-left'>
       <div class='off-screen-container'>
-        <jdoc:include type="modules" name="mobile-sidebar-left" />
-      </div>
+        <jdoc:include type="modules" name="mobile-sidebar-left" /> </div>
     </div>
     <div class='wrapper' id='skrollr-body'>
       <!-- Body -->
       <div class="body">
         <div class='cover' onclick='onClickCover()' style="display:none" ;></div>
         <div class='mobile-menu-bar'>
-          <div class='mobile-menu-btn' onclick='onClickMenu();'>&#9776; <span>menu</span>
-          </div>
+          <div class='mobile-menu-btn' onclick='onClickMenu();'>&#9776; <span>menu</span></div>
         </div>
         <!-- Left Off Page -->
         <?php if ($this->countModules('left-off-page')) : ?>
         <div class='left-off-page'>
-          <jdoc:include type="modules" name="left-off-page" />
-        </div>
+          <jdoc:include type="modules" name="left-off-page" /> </div>
         <?php endif; ?>
+
+
         <?
         include "index_sizes.php"
         ?>
