@@ -1,5 +1,4 @@
 <!--Sizes :- Used for onscreen indication of the currently active breakpont-->
-<setup>
   <sizes>
     <div id="exsmall">ExSmall: - Phone</div>
     <div id="small"> Small: - phone - landscape</div>
@@ -10,5 +9,4 @@
     <div id="massive"> Massive: - Desktop Massive</div>
     <div id="vast"> Vast: - Desktop Maxium possible</div>
   </sizes>
-</setup>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

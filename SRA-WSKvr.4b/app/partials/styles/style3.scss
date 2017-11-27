@@ -1,78 +1,21 @@
-@import "../node_modules/node-normalize-scss/normalize";
-@import "../node_modules/susy/sass/_susy.scss";
-@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
-@import "../partials/cssGridSizes";
-@import "../partials/cssGridIndicator"; 
-body {
-  //
-  //display:none;
-  text-align: center;
-}
-body {
-  max-width: 1600px;
-  padding: 10px;
-  h2 {
-    color: blue;
-    margin-bottom: 5px;
-  }
-}
-@mixin grid-child ($col-start, $col-end, $row-start, $row-end) {
-  -ms-grid-column: $col-start;
-  -ms-grid-column-span: $col-end - $col-start;
-  -ms-grid-row: $row-start;
-  -ms-grid-row-span: $row-end - $row-start;
-  grid-column: #{$col-start}/#{$col-end};
-  grid-row: #{$row-start}/#{$row-end};
-}
-* {
-  box-sizing: border-box;
-}
-header {
-  grid-area: hd;
-  background: #077;
-  padding: 20px;
-}
-footer {
-  grid-area: ft;
-  background: #077;
-  padding: 20px;
-}
-article {
-  grid-area: main;
-  background: #099;
-  padding: 20px;
-}
-aside {
-  grid-area: sba;
-  background: #077;
-  padding: 20px;
-}
-aside_b {
-  grid-area: sbb;
-  background: #0aa;
-  padding: 20px;
-}
-.grid {
-  color: #fff;
+
+.wrapper {
   display: grid;
-  grid-gap: 20px;
-}
-.grid {
-  grid-template-columns: 1fr;
-  grid-template-areas: "hd hd" "sba sba" "main main" "sbb sbb" "ft ft";
+  grid-gap: 10px;
+transition: all 1.5s ease-in-out;
 }
 
-/*@include breakpoint($exSmall) {
+@include breakpoint($exSmall) {
   .grid {
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "sba hd hd" "sba main sbb" "sba ft sbb";
+    grid-template-columns: 1fr;
+    grid-template-areas: "hdr_l" "hdr_r" "nav" "hero_fw" "abv_cont" "main" "bc" "bc_1" "bc_2" "bc_3" "ftr" "ftr_l" "ftr_r" "flt_btm";
   }
-}*/
+}
 
 @include breakpoint($small) {
   .grid {
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "sba hd hd" "sba main sbb" "sba ft sbb";
+    grid-template-areas: "sba hdr_l hdr_r" "sba main sbb" "sba ft sbb";
   }
 }
 @include breakpoint($medium) {
@@ -111,55 +54,4 @@ aside_b {
     grid-template-areas: "hd main sbb" "sba main sbb " "sba ft sbb  ";
   }
 }
-.grid2 {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 2fr 1fr 3fr 100px;
-  grid-gap: 10px
-}
-.grid2 div {
-  border: 2px solid #faa;
-  border-radius:5px;
-  background: #ccc;
-  text-align: center;
-  padding: 10px;
-}
 
-
-
-.wrapper {
-  margin-top:30px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: [col] 24% [col] 24% [col] 24% [col] 24%;
-  grid-template-rows: [row] auto [row] auto [row];
-  //background-color: #fff;
-  color: #444;
-}
-.box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}
-.a {
-  grid-column: col / span 1;
-  grid-row: row;
-}
-.b {
-  grid-column: col 3 / span 2;
-  grid-row: row;
-}
-.c {
-  grid-column: col 2 / span 1;
-  grid-row: row ;
-}
-.d {
-  grid-column: col 2 / span 3;
-  grid-row: row 2;
-}
-.e {
-  grid-column: col / span 4;
-  grid-row: row 3;
-}
