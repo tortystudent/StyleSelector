@@ -30,7 +30,7 @@ include "index_header.php";
           <div class="grid">
 
             <?php if ($this->countModules('header-left')) : ?>
-            <headerLeft>
+            <header_left>
               <section>
                 <div class="header_left">
                   <name>
@@ -39,11 +39,11 @@ include "index_header.php";
                   <jdoc:include type="modules" name="header-left" class="header-left" style="xhtml" />
                 </div>
               </section>
-            </headerLeft>
+            </header_left>
             <?php endif; ?>
 
             <?php if ($this->countModules('header-right')) : ?>
-            <headerRight>
+            <header_right>
               <section>
                 <div class="header_right">
                   <name>
@@ -54,7 +54,7 @@ include "index_header.php";
                   </a>
                 </div>
               </section>
-            </headerRight>
+            </header_right>
             <?php endif; ?>
 
             <?php if ($this->countModules('navigation')) : ?>
@@ -205,30 +205,30 @@ include "index_header.php";
               </section>
             </footer>
             <?php endif; ?>
-              
-              <?php if ($this->countModules('footer-left')) : ?>
 
-              <footer_left>
-                <div class="footer_left">
-                  <name>
-                    <h1>footer-left</h1>
-                  </name>
-                  <jdoc:include type="modules" name="footer-left" style="xhtml" />
-                </div>
-              </footer_left>
-            
+            <?php if ($this->countModules('footer-left')) : ?>
+
+            <footer_left>
+              <div class="footer_left">
+                <name>
+                  <h1>footer-left</h1>
+                </name>
+                <jdoc:include type="modules" name="footer-left" style="xhtml" />
+              </div>
+            </footer_left>
+
             <?php endif; ?>
-              <footer_right>
+            <footer_right>
 
-                <?php if ($this->countModules('footer-right')) : ?>
-                <div class="footer_right">
-                  <name>
-                    <h1>footer-right</h1>
-                  </name>
-                  <jdoc:include type="modules" name="footer-right" style="xhtml" />
-                </div>
-                <?php endif; ?>
-              </footer_right>
+              <?php if ($this->countModules('footer-right')) : ?>
+              <div class="footer_right">
+                <name>
+                  <h1>footer-right</h1>
+                </name>
+                <jdoc:include type="modules" name="footer-right" style="xhtml" />
+              </div>
+              <?php endif; ?>
+            </footer_right>
 
             <?php if ($this->countModules('float-bottom')) : ?>
             <float_bottom>

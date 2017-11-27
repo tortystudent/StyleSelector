@@ -1,5 +1,4 @@
-/* line 1, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/Show-All.scss */
-s
+/* line 2, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/Show-All.scss */
 sizes {
   width: 100%;
   display: grid;
@@ -8,8 +7,7 @@ sizes {
   z-index: 10;
   top: 10px; }
   /* line 10, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/Show-All.scss */
-  s
-sizes div {
+  sizes div {
     width: auto;
     text-align: center;
     background: #fff;
@@ -20,22 +18,14 @@ sizes div {
     z-index: 100;
     color: #000; }
   /* line 21, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/Show-All.scss */
-  s
-sizes div#exsmall,
-  s
-sizes div#small,
-  s
-sizes div#medium,
-  s
-sizes div#large,
-  s
-sizes div#larger,
-  s
-sizes div#exlarge,
-  s
-sizes div#massive,
-  s
-sizes div#vast {
+  sizes div#exsmall,
+  sizes div#small,
+  sizes div#medium,
+  sizes div#large,
+  sizes div#larger,
+  sizes div#exlarge,
+  sizes div#massive,
+  sizes div#vast {
     display: none; }
 
 /* line 32, /Users/Cyberman/htdocs/SRAWSKTestBed/templates/SRASelector/SRA-WSKvr.4b/app/partials/styles/layouts/Show-All.scss */

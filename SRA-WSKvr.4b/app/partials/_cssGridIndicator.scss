@@ -6,7 +6,6 @@ body{  transition: all 1.5s ease-in-out;}
 // size colouring in rainbow order
 @include breakpoint($exSmall) {
   body {
-    margin-top: 50px !important;
     background: #f00;
     transition: all 1.5s ease-in-out;
     div#exsmall {
@@ -17,7 +16,6 @@ body{  transition: all 1.5s ease-in-out;}
 
 @include breakpoint($small ) {
   body {
-    margin-top: 50px !important;
     background: #f90;
     transition: all 1.5s ease-in-out;
     div#small {
@@ -34,13 +32,11 @@ body{  transition: all 1.5s ease-in-out;}
       display: block !important
     }
 
-    margin-top: 50px !important;
   }
 }
 
 @include breakpoint($large) {
   body {
-    margin-top: 50px;
   background: #0f0;
   }
   div#large {
@@ -51,7 +47,6 @@ body{  transition: all 1.5s ease-in-out;}
 
 @include breakpoint($larger) {
   body {
-    margin-top: 0px;
   background: #0ff;
   }
   div#larger {
@@ -65,7 +60,6 @@ body{  transition: all 1.5s ease-in-out;}
     display: block !important
   }
   body {
-    margin-top: 0px;
       background: #00f;
   }
 }
@@ -75,7 +69,6 @@ body{  transition: all 1.5s ease-in-out;}
     display: block !important
   }
   body {
-    margin-top: 0px;
       background: #f0f;
 
   }
@@ -87,7 +80,6 @@ body{  transition: all 1.5s ease-in-out;}
   }
 
   body {
-    margin-top: 0px;
       background: #eee;
 
   }

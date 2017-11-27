@@ -14,13 +14,13 @@ nav {
   display:none;
 }*/
 
-headerLeft {
-  grid-area: hdrl;
+header_left {
+  grid-area: hdr_l;
   display: flex;
 }
 
-headerRight {
-  grid-area: hdrr;
+header_right {
+  grid-area: hdr_r;
   display: flex;
 }
 
