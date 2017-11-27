@@ -93,7 +93,7 @@ body {
   .grid {
     grid-template-columns: 1fr 4fr;
     grid-template-areas: 
-      "hdr_l hdr_r" 
+      "hdrl hdrr" 
       "nav nav" 
       "hero_fw hero_fw" 
       "abv_cont abv_cont"
@@ -109,13 +109,34 @@ body {
 }
 @include breakpoint($massive) {
   .grid {
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: "nav nav" "hero_fw hero_fw" "main main" "bc_1 bc_1" "bc_2 bc_2" "bc_3 bc_3" "ftr ftr" "ftr_l ftr_r" "flt_btm" "abv_cont abv_cont";
-  }
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+      "hdrl hdrr" 
+      "nav nav" 
+      "hero_fw hero_fw" 
+      "abv_cont abv_cont"
+      "main main" 
+      "bc bc_1" 
+      "bc_2 bc_2" 
+      "bc_3 bc_3" 
+      "ftr ftr" 
+      "ftr_l ftr_r" 
+      "flt_btm flt_btm" 
+      ;}
 }
 @include breakpoint($vast) {
   .grid {
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: "nav nav" "hero_fw hero_fw" "main main" "bc_1 bc_1" "bc_2 bc_2" "bc_3 bc_3" "ftr ftr" "ftr_l ftr_r" "flt_btm" "abv_cont abv_cont";
-  }
+    grid-template-areas:         "hdrl hdrr" 
+      "nav nav" 
+      "hero_fw hero_fw" 
+      "abv_cont abv_cont"
+      "bc main" 
+      "bc bc_1" 
+      "bc_2 bc_2" 
+      "bc_3 bc_3" 
+      "ftr_l ftr" 
+      "ftr_l ftr_r" 
+      "flt_btm flt_btm" 
+      ;}
 }

@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "file": "Show_Sizes.css",
-  "sources": [
-    "Show_Sizes.scss"
-  ],
-  "mappings": ";AAAA,AAAA,IAAI,CAAA;EACF,OAAO,EAAC,eACT,GAAC;;;AAEF,AAAA,KAAK,CAAA;EACH,OAAO,EAAC,gBAAiB;EACzB,QAAQ,EAAC,KAAM;EACf,OAAO,EAAC,iBAAkB;EAC1B,KAAK,EAAC,IAAK,GAEZ",
-  "names": []
-}

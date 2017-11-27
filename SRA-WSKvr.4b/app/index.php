@@ -113,8 +113,8 @@ include "index_header.php";
             </aside_b>
             <?php endif; ?>
 
-                            <main>
-            <section>
+            <main>
+              <section>
                 <name>
                   <h1>main content</h1>
                 </name>
@@ -122,126 +122,124 @@ include "index_header.php";
                 <jdoc:include type="message" />
                 <jdoc:include type="component" />
                 <!-- End Content -->
-            </section>
-              </main>
+              </section>
+            </main>
             <?php if ($this->countModules('below-content')) : ?>
-<below_content>
-            <section class="below_content">
-              <name>
-                <h1>below-content</h1>
-              </name>
-              <jdoc:include type="modules" name="below_content" style="xhtml" />
-            </section>
-</below_content>
-                        <?php endif; ?>
+            <below_content>
+              <section class="below_content">
+                <name>
+                  <h1>below-content</h1>
+                </name>
+                <jdoc:include type="modules" name="below_content" style="xhtml" />
+              </section>
+            </below_content>
+            <?php endif; ?>
 
             <?php if ($this->countModules('below-content-1')) : ?>
-<below_content-1>
-                         <section class="below_content-1">
-              <name>
-                <h1>below-content-1</h1>
-              </name>
-              <jdoc:include type="modules" name="below-content-1" style="xhtml" />
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card block.
+            <below_content-1>
+              <section class="below_content-1">
+                <name>
+                  <h1>below-content-1</h1>
+                </name>
+                <jdoc:include type="modules" name="below-content-1" style="xhtml" />
+                <div class="card">
+                  <div class="card-body">
+                    This is some text within a card block.
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card block.
+                <div class="card">
+                  <div class="card-body">
+                    This is some text within a card block.
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card block.
+                <div class="card">
+                  <div class="card-body">
+                    This is some text within a card block.
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card block.
+                <div class="card">
+                  <div class="card-body">
+                    This is some text within a card block.
+                  </div>
                 </div>
-              </div>
-            </section>
-</below_content-1>
-                        <?php endif; ?>
+              </section>
+            </below_content-1>
+            <?php endif; ?>
 
             <?php if ($this->countModules('below-content-2')) : ?>
- <below_content-2>
-                        <section class="below_content-2">
-              <name>
-                <h1>below-content-2</h1>
-              </name>
-              <jdoc:include type="modules" name="below-content-2" style="xhtml" />
-              <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Sample Card Title</h4>
-                  <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
-                  <a href="#" class="btn btn-primary">Tell me more &rarr;</a>
+            <below_content-2>
+              <section class="below_content-2">
+                <name>
+                  <h1>below-content-2</h1>
+                </name>
+                <jdoc:include type="modules" name="below-content-2" style="xhtml" />
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Sample Card Title</h4>
+                    <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
+                    <a href="#" class="btn btn-primary">Tell me more &rarr;</a>
+                  </div>
                 </div>
-              </div>
-            </section>
+              </section>
             </below_content-2>
             <?php endif; ?>
 
             <?php if ($this->countModules('below-content-3')) : ?>
-<below_content-3>
-                         <section class="below_content-3">
-              <name>
-                <h1>below-content-3</h1>
-              </name>
-              <jdoc:include type="modules" name="below-content-3" style="xhtml" />
-            </section>
+            <below_content-3>
+              <section class="below_content-3">
+                <name>
+                  <h1>below-content-3</h1>
+                </name>
+                <jdoc:include type="modules" name="below-content-3" style="xhtml" />
+              </section>
             </below_content-3>
-                <?php endif; ?>
+            <?php endif; ?>
 
             <?php if ($this->countModules('footer')) : ?>
- <footer>           <section class="footer">
-              <name>
-                <h1>footer</h1>
-              </name>
-              <jdoc:include type="modules" name="footer" style="xhtml" /> hand added content to footer
-            </section>
+            <footer>
+              <section class="footer">
+                <name>
+                  <h1>footer</h1>
+                </name>
+                <jdoc:include type="modules" name="footer" style="xhtml" /> hand added content to footer
+              </section>
             </footer>
             <?php endif; ?>
-
-            <?php if ($this->countModules('footer-left')) : ?>
-           <section>
-             <footer_left> 
-              <div class="footer_left">
-                <name>
-                  <h1>footer-left</h1>
-                </name>
-                <jdoc:include type="modules" name="footer-left" style="xhtml" />
-              </div>
-              <?php endif; ?>
-</footer_left>
-             <footer_right>
               
-              <?php if ($this->countModules('footer-right')) : ?>
-              <div class="footer_right">
-                <name>
-                  <h1>footer-right</h1>
-                </name>
-                <jdoc:include type="modules" name="footer-right" style="xhtml" />
-              </div>
-              <?php endif; ?>
-             </footer_right>
               <?php if ($this->countModules('footer-left')) : ?>
-            </section>
-            <?php endif; ?>
 
+              <footer_left>
+                <div class="footer_left">
+                  <name>
+                    <h1>footer-left</h1>
+                  </name>
+                  <jdoc:include type="modules" name="footer-left" style="xhtml" />
+                </div>
+              </footer_left>
+            
+            <?php endif; ?>
+              <footer_right>
+
+                <?php if ($this->countModules('footer-right')) : ?>
+                <div class="footer_right">
+                  <name>
+                    <h1>footer-right</h1>
+                  </name>
+                  <jdoc:include type="modules" name="footer-right" style="xhtml" />
+                </div>
+                <?php endif; ?>
+              </footer_right>
 
             <?php if ($this->countModules('float-bottom')) : ?>
             <float_bottom>
-            <section class="float_bottom">
-              <name>
-                <h1>flt_btm</h1>
-              </name>
-              <jdoc:include type="modules" name="float-bottom" style="xhtml" />
-              <h3>hand added content to float_bottom </h3>
-            </section>
+              <section class="float_bottom">
+                <name>
+                  <h1>flt_btm</h1>
+                </name>
+                <jdoc:include type="modules" name="float-bottom" style="xhtml" />
+                <h3>hand added content to float_bottom </h3>
+              </section>
             </float_bottom>
             <?php endif; ?>
           </div>
