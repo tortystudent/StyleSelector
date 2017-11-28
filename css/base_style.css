@@ -2619,7 +2619,7 @@ form * { box-sizing:content-box; }
 .off-screen-left li.level3 a { line-height:26px !important; }
 .login { overflow:auto; }
 
-@media screen and (max-width: 1052px) {
+/*@media screen and (max-width: 1052px) {
   body.site { width:100%; }
   .body { width:100%; }
   .body .container.main {
@@ -2665,7 +2665,7 @@ form * { box-sizing:content-box; }
   .footer .custom { margin-left:2%; }
   #aside { display:none; }
   .feature .text-holder .feature-title { font-size:26px; }
-}
+}*/
 @media screen and (max-width: 1032px) {
   .strip-2 { display:none; }
 }

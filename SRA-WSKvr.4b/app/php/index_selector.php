@@ -1,7 +1,7 @@
 <!--Sizes :- Used for onscreen indication of the currently active breakpont-->
 <setup>
 
-  <selector> **************************STYLE***********************
+  <selector> ************************** Layout *********************
     <? $dir="../partials/styles"; $handle=opendir($dir); ?>
       <form> Select a style
         <select name="setStyle" onchange="this.form.submit()">
@@ -23,7 +23,7 @@
               
               ?>
         </select>
-      </form> ************************COLOUR********************
+      </form> *********************** Colour scheme ******************
       <? $dir="../partials/styles/colours"; $handle=opendir($dir); ?>
         <form> Select a colour
           <select name="setColour" onchange="this.form.submit()">
@@ -43,7 +43,7 @@
               
               ?>
           </select>
-        </form> *************************LAYOUT*****************
+        </form> *********************** setup controls *******************
         <? $dir="../partials/styles/layouts"; $handle=opendir($dir); ?>
           <form> Select a Layout
             <select name="setLayout" onchange="this.form.submit()">
@@ -142,4 +142,3 @@
           ?>
   </selector>
 </setup>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

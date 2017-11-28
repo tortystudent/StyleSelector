@@ -9,4 +9,3 @@
     <div id="massive"> Massive: - Desktop Massive</div>
     <div id="vast"> Vast: - Desktop Maxium possible</div>
   </sizes>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
