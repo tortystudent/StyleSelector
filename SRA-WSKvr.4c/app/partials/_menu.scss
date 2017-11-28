@@ -1,0 +1,14 @@
+/*
+MaxMenu override
+*/
+#maximenuck > div.maxiroundedcenter > ul > li.maximenuck.current.active.first.level1 > a{
+    min-height: 0px;
+    }
+    /*
+END MaxMenu override
+*/
+
+div.body{
+  margin:0 auto;
+  //max-width:1024px;
+}

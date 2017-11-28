@@ -104,7 +104,7 @@ aside {
 @include breakpoint($exLarge) {
   .grid {
     grid-template-columns: 2fr 2fr 4fr;
-    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm .";
+    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm ftr";
   }
 }
 
