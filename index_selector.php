@@ -1,7 +1,7 @@
 <!--Sizes :- Used for onscreen indication of the currently active breakpont-->
 <setup>
 
-  <selector> ************************** Layout *********************
+  <selector> ************** Layout **************
     <? $dir="../partials/styles"; $handle=opendir($dir); ?>
       <form> Select a style
         <select name="setStyle" onchange="this.form.submit()">
@@ -23,7 +23,7 @@
               
               ?>
         </select>
-      </form> *********************** Colour scheme ******************
+      </form> *********** Colour scheme ***********
       <? $dir="../partials/styles/colours"; $handle=opendir($dir); ?>
         <form> Select a colour
           <select name="setColour" onchange="this.form.submit()">
@@ -43,7 +43,7 @@
               
               ?>
           </select>
-        </form> *********************** setup controls *******************
+        </form> *********** setup controls ************
         <? $dir="../partials/styles/layouts"; $handle=opendir($dir); ?>
           <form> Select a Layout
             <select name="setLayout" onchange="this.form.submit()">
@@ -118,7 +118,7 @@
           }
           }
             
-          echo "<br> ***********************************<br>";
+          echo "<br> ***********************************";
                     error_reporting(E_ALL);
           ini_set('display_errors', 1);
               if(isset($_SESSION["lastSetStyle"])){
@@ -131,13 +131,13 @@
             if(isset($_SESSION["lastSetColour"])){
                 echo "Last selected Colour is => ".$_SESSION["lastSetColour"]."<br>";
              } else {
-                echo "<br>  Last selected Colour is UNSET<br>";
+                echo "Last selected Colour is UNSET<br>";
             }
                 
               if(isset($_SESSION["lastSetLayout"])){
                 echo "Last selected Layout is => ".$_SESSION["lastSetLayout"]."<br>";
                } else {
-                echo "<br>  Last selected Layout is UNSET<br>";
+                echo " Last selected Control is UNSET<br>";
             }
           ?>
   </selector>
