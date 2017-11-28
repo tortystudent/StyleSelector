@@ -1,5 +1,5 @@
 <!--Sizes :- Used for onscreen indication of the currently active breakpont-->
-  <sizes>
+  <sizes onclick='onClickMenu();'>
     <div id="exsmall">ExSmall: - Phone</div>
     <div id="small"> Small: - phone - landscape</div>
     <div id="medium"> Medium: - Tablet Portrait</div>

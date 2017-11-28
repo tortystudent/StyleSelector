@@ -14,44 +14,112 @@ transition: all 1.5s ease-in-out;
 
 @include breakpoint($small) {
   .grid {
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "sba hdr_l hdr_r" "sba main sbb" "sba ft sbb";
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+      "hdr_l hdr_r" 
+      "nav nav" 
+      "hero_fw hero_fw"
+      "abv_cont abv_cont"
+      "main main"
+      "bc bc"
+      " bc_1 bc_2"
+      "bc_3 bc_3"
+      "ftr ftr"
+      "ftr_l ftr_r"
+      "flt_btm flt_btm";
   }
 }
 @include breakpoint($medium) {
   .grid {
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "hd hd sbb" "sba main sbb" "sba ft ft";
+    grid-template-areas: 
+      "hdr_l . hdr_r" 
+      ". nav nav" 
+      "hero_fw hero_fw hero_fw"
+      "abv_cont abv_cont ."
+      "main main main"
+      "bc bc ."
+      " bc_1 . bc_2"
+      ". bc_3 bc_3"
+      "ftr ftr ftr"
+      "ftr_l . ftr_r"
+      "flt_btm flt_btm flt_btm";
   }
 }
 @include breakpoint($large) {
   .grid {
     grid-template-columns: 1fr 4fr 2fr;
-    grid-template-areas: "hd hd hd" "sba main sbb" "ft ft sbb";
+    grid-template-areas: 
+      "hdr_l hdr_l hdr_r" 
+      "nav nav nav" 
+      "hero_fw hero_fw hero_fw"
+      ". abv_cont abv_cont"
+      "main main main"
+      "bc bc ."
+      " bc_1 bc_2 bc_2"
+      "bc_3 bc_3 bc_3"
+      "ftr ftr ftr"
+      "ftr_l ftr_r ftr_r"
+      "flt_btm flt_btm flt_btm";
   }
 }
 @include breakpoint($larger) {
   .grid {
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "sba hd sbb" "sba main sbb" "sba ft sbb";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:       
+      "hdr_l . hdr_r" 
+      "nav nav nav" 
+      "hero_fw hero_fw hero_fw"
+      ". abv_cont ."
+      "main main bc"
+      " bc_1 . bc_2"
+      "bc_3 bc_3 bc_3"
+      "ftr ftr ftr"
+      "ftr_l . ftr_r"
+      "flt_btm flt_btm flt_btm";
   }
 }
 @include breakpoint($exLarge) {
   .grid {
-    grid-template-columns: 3fr 4fr 1fr;
-    grid-template-areas: "hd hd sba" "main sbb sba" "ft sbb sba";
+    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-areas:       
+      "hdr_l  hdr_r bc_3" 
+      "nav nav bc_3" 
+      "hero_fw hero_fw hero_fw"
+      ". main main"
+      "bc_1 . bc_2"
+      "abv_cont ftr ftr"
+      "ftr_l . ftr_r"
+      "bc flt_btm flt_btm";
   }
 }
 @include breakpoint($massive) {
   .grid {
     grid-template-columns: 2fr 1fr 2fr;
-    grid-template-areas: "hd hd hd" "main main sbb " "ft ft sba ";
+    grid-template-areas:       
+      "hdr_l nav hdr_r" 
+      "bc_3 bc_3 bc_3 "
+      "hero_fw hero_fw hero_fw"
+      "main main main"
+      "bc_1 abv_cont bc_2"
+      "ftr ftr ftr"
+      "ftr_l bc ftr_r"
+      "flt_btm flt_btm .";
   }
 }
 @include breakpoint($vast) {
   .grid {
     grid-template-columns: 1fr 4fr 2fr; 
-    grid-template-areas: "hd main sbb" "sba main sbb " "sba ft sbb  ";
+    grid-template-areas:       "hdr_l . hdr_r" 
+      ". nav nav" 
+      "bc_3 bc_3 bc_3 "
+      "hero_fw hero_fw hero_fw"
+      "abv_cont abv_cont abv_cont"
+      "main main main"
+      "bc_1 bc bc_2"
+      "ftr ftr ftr"
+      "ftr_l . ftr_r"
+      "flt_btm flt_btm .";
   }
 }
 

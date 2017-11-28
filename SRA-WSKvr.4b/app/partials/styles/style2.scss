@@ -52,7 +52,7 @@ body {
 
     grid-template-columns: 4fr 1fr;
     grid-template-areas: 
-      "hdrl hdrr" 
+      "hdr_l hdr_r" 
       "abv_cont abv_cont" 
       "nav nav" 
       "hero_fw hero_fw" 
@@ -67,7 +67,7 @@ body {
     grid-template-columns: 2fr 5fr;
     grid-template-areas: 
       "nav nav"
-      "hdrl hdrr" 
+      "hdr_l hdr_r" 
       "hero_fw hero_fw" 
       "main main" 
       "bc bc_1" 
@@ -76,7 +76,7 @@ body {
       "ftr ftr" 
       "ftr_l ftr_r" 
       "flt_btm flt_btm" 
-      "abv_cont abv_cont";
+      ;
   }
 }
 @include breakpoint($larger) {
@@ -84,7 +84,7 @@ body {
 
     grid-template-columns: 1fr 5fr;
     grid-template-areas: 
-      "hdrr hdrl" 
+      "hdr_r hdr_l" 
       "nav nav" 
       "hero_fw hero_fw" 
       "aside main" 
@@ -100,7 +100,7 @@ body {
 
     grid-template-columns: 1fr 4fr;
     grid-template-areas: 
-      "hdrl hdrr" 
+      "hdr_l hdr_r" 
       "nav nav" 
       "hero_fw hero_fw" 
       "abv_cont abv_cont"
@@ -119,7 +119,7 @@ body {
 
     grid-template-columns: 3fr 1fr;
     grid-template-areas: 
-      "hdrl hdrr" 
+      "hdr_l hdr_r" 
       "nav nav" 
       "hero_fw hero_fw" 
       "abv_cont abv_cont"
@@ -136,7 +136,8 @@ body {
   .grid {
 
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:         "hdrl  hdrl hdrr" 
+    grid-template-areas:         
+      "hdr_l  hdr_l hdr_r" 
       ". nav nav" 
       "hero_fw hero_fw hero_fw" 
       "abv_cont abv_cont abv_cont"

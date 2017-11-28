@@ -1,7 +1,20 @@
-
-body {
-  display: block;
+wrapper {
+  transition: all 1.5s ease-in-out;
 }
+
+.grid {
+  color: #fff;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100px 1fr;
+  grid-template-areas: "nav hd" "sidebar sidebar" "article1 article1" "article2 article2" "ft ft";
+  > * {
+    background: #077;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
 .grid nav {
   padding: 0px;
   grid-area: nav;
@@ -11,11 +24,33 @@ body {
   }
 }
 
+header {
+  grid-area: hd;
+}
+
+footer {
+  grid-area: ft;
+}
+
+article1 {
+  grid-area: article1;
+}
+
+article2 {
+  grid-area: article2;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
 @include breakpoint($exSmall) {
   .grid {
-
     grid-template-columns: 1fr;
-    grid-template-areas: "hdr_l" "hdr_r" "nav" "hero_fw" "abv_cont" "main" "bc" "bc_1" "bc_2" "bc_3" "ftr" "ftr_l" "ftr_r" "flt_btm";
+    grid-template-areas: "hdr_l " "hdr_r" "nav" "hero_fw" "abv_cont" "main" "bc" "bc_1" "bc_2"  "bc_3" "ft" "ftr_l" "ftr_r" "flt_btm";
+  }
+  img {
+    width: 80vw !important;
   }
 }
 
@@ -23,83 +58,59 @@ body {
 
 @include breakpoint($small) {
   .grid {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "hdr_l  hdr_r" " bc_3 bc_3 " "hero_fw  hero_fw" " main bc_2" " main bc_1" "bc bc" "ftr_l ftr_r" "flt_btm flt_btm ";
+  }
 
-    grid-template-columns: 1fr;
-    grid-template-areas: "abv_cont" "hdr_l" "hdr_r" "nav" "hero_fw" "main" "bc" "bc_1" "bc_2" "bc_3" "ftr" "ftr_l" "ftr_r" "flt_btm";
+  .article2 {
+    display: block;
+  }
+
+  .grid nav {
+    padding: 0px;
+    grid-area: nav;
+    padding: 0px;
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        flex-grow: 1;
+      }
+    }
   }
 }
+
 @include breakpoint($medium) {
-
-  .grid { 
- 
-    grid-template-columns: 400px 1fr;
-    grid-template-areas: "hdr_l hdr_r" "abv_cont abv_cont" "nav nav" "hero_fw hero_fw" "main main" "bc bc" "bc_1 bc_1" "bc_2 bc_2" "bc_3 bc_3" "ftr ftr" "ftr_l ftr_r" "flt_btm flt_btm"
-  }
-}
-@include breakpoint($large) {
-  .grid {
-
-    grid-template-columns: 2fr 5fr;
-    grid-template-areas: "nav nav" "hdr_l hdr_r" "hero_fw hero_fw" "main main" "bc bc_1" "bc_2 bc_2" "bc_3 bc_3" "ftr ftr" "ftr_l ftr_r" "flt_btm flt_btm" "abv_cont abv_cont";
-  }
-}
-@include breakpoint($larger) {
-  .grid {
-
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas: "hdr_r hdr_l" "nav nav" "hero_fw hero_fw" "main main" "abv_cont bc_2" "bc_1 bc" "bc_3 bc_3" "ftr_l ftr_r" "ftr flt_btm";
-  }
-}
-@include breakpoint($exLarge) {
-
   .grid {
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: 
-      "hdr_l hdr_r" 
-      "nav nav" 
-      "hero_fw hero_fw" 
-      "abv_cont abv_cont"
-      "main main" 
-      "bc bc_1" 
-      "bc_2 bc_2" 
-      "bc_3 bc_3" 
-      "ftr ftr" 
-      "ftr_l ftr_r" 
-      "flt_btm flt_btm" 
-      ;
+    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm .";
   }
 }
+
+@include breakpoint($large) {
+  .grid {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "hdr_l nav hdr_r" "bc_3 bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm ."; //display: none;
+  }
+}
+
+@include breakpoint($larger) {
+  .grid {
+    grid-template-columns: 2fr 4fr;
+    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm .";
+  }
+}
+
+@include breakpoint($exLarge) {
+  .grid {
+    grid-template-columns: 2fr 2fr 4fr;
+    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm .";
+  }
+}
+
 @include breakpoint($massive) {
   .grid {
-
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: 
-      "nav nav nav" 
-      "hdr_l hdr hdr_r"
-      "hero_fw hero_fw hero_fw" 
-      "abv_cont abv_cont abv_cont"
-      "main main main" 
-      "bc_1 bc_1 bc" 
-      "bc_2 bc_2 bc" 
-      "bc_3 bc_3 bc" 
-      "ftr_l ftr ftr_r" 
-      "flt_btm flt_btm flt_btm" ;
-  }
-}
-@include breakpoint($vast) {
-
-  .grid {
-
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:      "nav nav nav" 
-      "hdr_l hdr hdr_r"
-      "hero_fw hero_fw hero_fw" 
-      "abv_cont abv_cont abv_cont"
-      "main main main" 
-      "bc_1 bc_1 bc" 
-      "bc_2 bc_2 bc" 
-      "bc_3 bc_3 bc" 
-      "ftr_l ftr ftr_r" 
-      "flt_btm flt_btm flt_btm" ;
+    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm .";
   }
 }

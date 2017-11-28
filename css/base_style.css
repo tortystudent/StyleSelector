@@ -2706,7 +2706,9 @@ form * { box-sizing:content-box; }
     margin-bottom:0px;
     margin-top:50px;
   }
-  body.site { height:100%; }
+  body.site { height:100%; 
+      padding-top:50px;
+}
   nav, .navigation { display:none; }
   .mobile-menu-bar {
     display:block;

@@ -2,10 +2,10 @@
 // colours mentioned are diplayed as body backgrounds
 // when "Partials/_cssGridIndicator.scss" is enabled
 $exSmall: 0 480px; //RED iPhone Portrait
-$small: 481px 767px; //ORANGE iPhone Landscape
-$medium: 768px 979px; //YELLOW
-$large: 980px 1024px; //GREEN
-$larger: 1025px 1200px; //CYAN iPad Landscape
-$exLarge: 1201px 1400px; //BLUE
+$small: 481px 749px; //ORANGE iPhone Landscape
+$medium: 750px 959px; //YELLOW iPad Portrait
+$large: 960px 1024px; //GREEN iPad Landscape
+$larger: 1025px 1200px; //CYAN  Desktop standard (old)
+$exLarge: 1201px 1400px; //BLUE  Desktop Large
 $massive: 1401px 1600px; //MAGENTA
 $vast:1601px 5000px; //WHITE

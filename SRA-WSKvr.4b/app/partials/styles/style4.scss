@@ -1,4 +1,6 @@
-wrapper{  transition: all 1.5s ease-in-out;}
+wrapper {
+  transition: all 1.5s ease-in-out;
+}
 
 .grid {
   color: #fff;
@@ -45,10 +47,10 @@ aside {
 @include breakpoint($exSmall) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-areas: "hd " "nav" "article1" "article2" "sidebar" "ft";
+    grid-template-areas: "hdr_l " "hdr_r" "nav" "hero_fw" "abv_cont" "main" "bc" "bc_1" "bc_2"  "bc_3" "ft" "ftr_l" "ftr_r" "flt_btm";
   }
-  img{
-    width:80vw !important;
+  img {
+    width: 80vw !important;
   }
 }
 
@@ -57,13 +59,13 @@ aside {
 @include breakpoint($small) {
   .grid {
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: "hd hd" "nav nav" "sidebar sidebar" "article1 article1" "article2 article2" "ft ft";
+    grid-template-areas: "hdr_l  hdr_r" " bc_3 bc_3 " "hero_fw  hero_fw" " main bc_2" " main bc_1" "bc bc" "ftr_l ftr_r" "flt_btm flt_btm ";
   }
 
   .article2 {
     display: block;
   }
-  
+
   .grid nav {
     padding: 0px;
     grid-area: nav;
@@ -81,35 +83,34 @@ aside {
 @include breakpoint($medium) {
   .grid {
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: "hd hd" "sidebar nav" "sidebar article1" "ft article2";
+    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm .";
   }
 }
 
 @include breakpoint($large) {
   .grid {
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: "sidebar hd" "sidebar nav" "sidebar article1" "sidebar article2" "sidebar ft";
-    //display: none;
+    grid-template-areas: "hdr_l nav hdr_r" "bc_3 bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm ."; //display: none;
   }
 }
 
 @include breakpoint($larger) {
   .grid {
     grid-template-columns: 2fr 4fr;
-    grid-template-areas: "sidebar hd" "sidebar nav" "article2 article1" "article2 ft";
+    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm .";
   }
 }
 
 @include breakpoint($exLarge) {
   .grid {
     grid-template-columns: 2fr 2fr 4fr;
-    grid-template-areas: "sidebar hd hd" "sidebar article1 nav"  "sidebar article1 article2" "sidebar ft ft";
+    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm ftr";
   }
 }
 
 @include breakpoint($massive) {
   .grid {
-    grid-template-columns: 2fr 4fr 2fr;
-    grid-template-areas: "nav nav hd" "sidebar article1 article2" "ft ft ft";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "hdr_l nav hdr_r" "abv_cont bc_3 bc_3 " "hero_fw hero_fw hero_fw" "bc_1 main bc_2" "bc_1 bc bc_2" "ftr_l ftr ftr_r" "flt_btm flt_btm .";
   }
 }
